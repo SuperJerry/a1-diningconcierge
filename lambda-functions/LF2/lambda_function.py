@@ -98,7 +98,7 @@ def sendMessage(msg, phoneNum, recipient):
     CHARSET = "UTF-8"
     SENDER = "yl4632@columbia.edu"
     AWS_REGION = "us-west-2"
-    SUBJECT = "Dining Conciege Bot Restaurant Suggestions"
+    SUBJECT = "Dining Concierge Bot Restaurant Suggestions"
     
     client = boto3.client('ses',region_name=AWS_REGION)
     response2 = client.send_email(
